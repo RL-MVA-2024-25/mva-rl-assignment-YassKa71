@@ -164,7 +164,7 @@ class ProjectAgent:
         torch.save(self.q_network.state_dict(), path)
 
     def load(self):
-        self.q_network.load_state_dict(torch.load("/home/runner/work/assignment-YassKa71/assignment-YassKa71/src/trained_dqn_model.pth"))
+        self.q_network.load_state_dict(torch.load("/home/runner/work/mva-rl-assignment-YassKa71/mva-rl-assignment-YassKa71/src/trained_dqn_model.pth"))
         self.q_network.eval()
 
 # Training loop

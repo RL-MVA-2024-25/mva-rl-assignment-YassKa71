@@ -96,8 +96,8 @@ class ProjectAgent:
 
         extended_state = np.concatenate([observation, self.drug_counters])
         
-        if use_random and np.random.rand() < self.epsilon:
-            return random.randint(0, self.action_dim - 1)
+        # if use_random and np.random.rand() < self.epsilon:
+        #     return random.randint(0, self.action_dim - 1)
         
         observation = torch.FloatTensor(extended_state).unsqueeze(0).to(self.device)
         
